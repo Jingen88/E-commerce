@@ -146,7 +146,7 @@ sortProduct();
 {
   filteredProducts.map((item, index) => {
    return(
-    <ProductItem key={index} name={item.name} price={item.price} image={item.image} id={item.id}/>
+    <ProductItem key={index} name={item.name} price={item.price} image={item.image} id={item._id} />
    )
 })
 

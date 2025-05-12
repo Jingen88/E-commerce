@@ -5,7 +5,10 @@ import { ShopContext } from '../context/ShopContext'
 
 const ProductItem = ({id,image,name,price}) => {
 
+
 const {currency} = useContext(ShopContext);
+
+console.log("Product ID in ProductItem:", id); // Debugging log
 
 
   return (
