@@ -3,6 +3,7 @@ import { createContext} from "react";
 import {products} from "../assets/frontend_assets/assets";
 import { useEffect } from "react";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
  export const ShopContext = createContext();
 
@@ -14,6 +15,7 @@ const delivery_fee = 4.99;
 const[search,setSearch] = React.useState('')
 const[showSearch, setShowSearch] = React.useState(true)
 const [cartItems, setCartItems] = React.useState([])
+const navigate = useNavigate()
 
    
 
@@ -103,6 +105,7 @@ const getCartAmount = ()=>{
         getCartCount,
         updateQuantity,
         getCartAmount,
+        navigate,
     };
 
     return(
